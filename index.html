@@ -185,7 +185,7 @@
   .hero-name .accent { color: var(--green); }
 
   .hero-role {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--text-mid);
     margin-bottom: 28px;
     opacity: 0;
@@ -413,7 +413,7 @@
 
   .about-text p {
     color: var(--text-mid);
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.9;
     margin-bottom: 16px;
   }
@@ -520,7 +520,7 @@
     border-radius: 2px;
     letter-spacing: 0.05em;
   }
-  .skill-desc { font-size: 12px; color: var(--text-dim); line-height: 1.6; }
+  .skill-desc { font-size: 14px; color: var(--text-dim); line-height: 1.6; }
 
   /* ── PROJECTS ── */
   #projects { background: var(--bg); }
@@ -566,7 +566,7 @@
     letter-spacing: -0.01em;
   }
   .project-desc {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--text-dim);
     line-height: 1.8;
     max-width: 560px;
@@ -631,7 +631,7 @@
   }
   .contact-text h2 .accent { color: var(--green); }
   .contact-text p {
-    font-size: 13px;
+    font-size: 15px;
     color: var(--text-dim);
     line-height: 1.8;
     margin-bottom: 32px;
@@ -681,7 +681,7 @@
   }
   footer p {
     font-family: var(--font-mono);
-    font-size: 11px;
+    font-size: 13px;
     color: var(--text-dim);
     letter-spacing: 0.05em;
   }
@@ -1009,65 +1009,80 @@
       <div class="project-card animate-on-scroll">
         <div>
           <div class="project-num">PROJECT_001</div>
-          <div class="project-name">E-Commerce API</div>
+          <div class="project-name">Kaelo - Cycling Routes & Local Commerce Platform</div>
           <p class="project-desc">
-            API REST completa para plataforma de e-commerce: autenticación con JWT, gestión de productos,
-            carrito de compras, órdenes y pagos. Incluye rate limiting, validación de esquemas y
-            documentación con Swagger.
+            Developer | Aug 2025 - Present. Developed a cross-platform mobile app to connect cyclists
+            with routes and local businesses in Yucatan, integrating Mapbox for GPS navigation and
+            offline map support. Engineered a serverless backend using Supabase (PostgreSQL/PostGIS),
+            implementing Auth, Storage, and Edge Functions to facilitate roles for Cyclists, Merchants,
+            and Route Creators. Constructed a feature-driven codebase utilizing Zustand for state
+            management, TanStack Query for server synchronization, and React Hook Form with Zod for
+            type-safe validation.
           </p>
           <div class="project-stack">
-            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">React Native</span>
+            <span class="stack-tag">Expo</span>
             <span class="stack-tag">TypeScript</span>
-            <span class="stack-tag">PostgreSQL</span>
-            <span class="stack-tag">Docker</span>
-            <span class="stack-tag">JWT</span>
+            <span class="stack-tag">Supabase</span>
+            <span class="stack-tag">Stripe</span>
+            <span class="stack-tag">Mapbox</span>
+            <span class="stack-tag">TanStack Router</span>
+            <span class="stack-tag">Zustand</span>
           </div>
         </div>
         <div class="project-links">
-          <a href="#" class="proj-link">GitHub →</a>
-          <a href="#" class="proj-link">Demo →</a>
+          <a href="https://github.com/jonadev19/kaelo-expo" target="_blank" class="proj-link">GitHub →</a>
         </div>
       </div>
 
       <div class="project-card animate-on-scroll">
         <div>
           <div class="project-num">PROJECT_002</div>
-          <div class="project-name">GraphQL Social API</div>
+          <div class="project-name">URL Shortener API</div>
           <p class="project-desc">
-            Backend para red social con GraphQL: subscriptions en tiempo real, sistema de seguidores,
-            feed personalizado y paginación por cursor. Caché con Redis para queries frecuentes.
+            Developer | Mar 2026 - Mar 2026. Designed and deployed a production REST API with real-time
+            click tracking and access log analytics (IP, User-Agent) stored in a normalized PostgreSQL
+            two-table schema. Containerized the application with Docker and configured Traefik as a
+            reverse proxy with automatic HTTPS via Let's Encrypt; deployed to Railway with custom
+            subdomain. Enforced strict TypeScript across the codebase with ESLint + typescript-eslint;
+            separated concerns into lib/, types/, and generated Prisma client layers following Clean
+            Architecture principles.
           </p>
           <div class="project-stack">
-            <span class="stack-tag">GraphQL</span>
-            <span class="stack-tag">MongoDB</span>
-            <span class="stack-tag">Redis</span>
+            <span class="stack-tag">Node.js</span>
             <span class="stack-tag">TypeScript</span>
-            <span class="stack-tag">Apollo Server</span>
+            <span class="stack-tag">Express</span>
+            <span class="stack-tag">Prisma</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">Docker</span>
           </div>
         </div>
         <div class="project-links">
-          <a href="#" class="proj-link">GitHub →</a>
+          <a href="https://github.com/jonadev19/url-shortener" target="_blank" class="proj-link">GitHub →</a>
+          <a href="https://short.jonathandev.me/docs" target="_blank" class="proj-link">Website →</a>
         </div>
       </div>
 
       <div class="project-card animate-on-scroll">
         <div>
           <div class="project-num">PROJECT_003</div>
-          <div class="project-name">Task Manager CLI + API</div>
+          <div class="project-name">Maya Learning Backend</div>
           <p class="project-desc">
-            Microservicio de gestión de tareas con API REST y CLI interactivo. Arquitectura limpia
-            con repositorio pattern, autenticación por API keys y webhooks para notificaciones.
+            Developer | Oct 2025 - Nov 2025. Built REST API with 25+ endpoints for a mobile app
+            teaching Mayan language, featuring JWT authentication, role-based access control
+            (Admin/Student), and automated grading system. Implemented PDF report generation with
+            student performance analytics; deployed to Render with MongoDB Atlas and Gunicorn in
+            production.
           </p>
           <div class="project-stack">
-            <span class="stack-tag">Node.js</span>
-            <span class="stack-tag">TypeScript</span>
-            <span class="stack-tag">PostgreSQL</span>
-            <span class="stack-tag">Prisma</span>
-            <span class="stack-tag">Docker</span>
+            <span class="stack-tag">Django</span>
+            <span class="stack-tag">MongoDB</span>
+            <span class="stack-tag">Python</span>
           </div>
         </div>
         <div class="project-links">
-          <a href="#" class="proj-link">GitHub →</a>
+          <a href="https://github.com/jonadev19/maya_learning_backend" target="_blank" class="proj-link">GitHub →</a>
+          <a href="https://maya-learning-backend.onrender.com/" target="_blank" class="proj-link">Website →</a>
         </div>
       </div>
 
@@ -1092,19 +1107,19 @@
           hablemos.
         </p>
         <div class="contact-links">
-          <a href="mailto:tu@email.com" class="contact-link">
+          <a href="mailto:jonathanapmendez20@gmail.com" class="contact-link">
             <span class="cl-icon">✉️</span>
-            <span class="cl-label">tu@email.com</span>
+            <span class="cl-label">jonathanapmendez20@gmail.com</span>
             <span class="cl-arrow">→</span>
           </a>
-          <a href="https://github.com/tu-usuario" target="_blank" class="contact-link">
+          <a href="https://github.com/jonadev19" target="_blank" class="contact-link">
             <span class="cl-icon">🐙</span>
-            <span class="cl-label">github.com/tu-usuario</span>
+            <span class="cl-label">github.com/jonadev19</span>
             <span class="cl-arrow">→</span>
           </a>
-          <a href="https://linkedin.com/in/tu-usuario" target="_blank" class="contact-link">
+          <a href="https://linkedin.com/in/jonadev20" target="_blank" class="contact-link">
             <span class="cl-icon">💼</span>
-            <span class="cl-label">linkedin.com/in/tu-usuario</span>
+            <span class="cl-label">linkedin.com/in/jonadev20</span>
             <span class="cl-arrow">→</span>
           </a>
         </div>
